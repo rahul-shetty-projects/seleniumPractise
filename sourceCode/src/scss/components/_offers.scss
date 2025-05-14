@@ -1,0 +1,223 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css');
+@import url('https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css');
+
+.react-date-picker__inputGroup__input--hasLeadingZero{
+  padding: 0px;
+}
+
+.react-date-picker__inputGroup{
+  padding-left: 8px!important;
+}
+
+.cart-header-navlink.blinkingText {
+  position: fixed;
+  right: 223px;
+  background: #2165e0;
+  color: #fff;
+  padding: 0px 10px;
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+  text-decoration: underline;
+}
+
+.sort-direction {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  &.asc {
+    border-bottom: 5px solid black;
+  }
+  
+  &.desc {
+    border-top: 5px solid black;
+  }
+}
+
+.date-field-container {
+  text-align: center;
+  label {
+    margin: 0 20px;
+  }
+  input[type=date] {
+    padding: 8px;
+    border-radius: 24px;
+    border: none;
+    width: 212px;
+    outline: none;
+    text-align: center;
+    font-weight: 500;
+  }
+  .react-date-picker  {
+    width: 250px;
+    .react-date-picker__wrapper {
+      border-radius: 18px;
+      border: 1px solid #aaa;
+      background: #fff;
+      color: #403c3c;
+
+      .react-date-picker__inputGroup {
+        display: inline;
+      }
+
+      button {
+        color: #403c3c !important;
+        background-color: transparent;
+        display: inline;
+      }
+      .react-calendar {
+          background: #b3cba7 !important;
+      }
+    }
+
+    .react-date-picker__calendar--open {
+      .react-calendar {
+        background-color: #8cac8c !important;
+        .react-calendar__tile.react-calendar__month-view__days__day {
+          &:hover {
+            background-color: #526952 !important;
+          }
+        }
+        .react-calendar__tile.react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend {
+          background-color: #05ff69 !important;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  .wrapperTwo {
+    width: 100%;
+    #sortableTable_length {
+      display:none;
+    }
+    .paginate_button {
+        background: #397916;
+        margin: 10px;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration:none;
+        cursor:pointer;
+
+        &:hover {
+          background:#0aa91d;
+        }
+    }
+  }
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    opacity: 0.99;
+    z-index: 9999;
+
+    &:before {
+        content: 'loading ..';
+        padding: 50%;
+        vertical-align: middle;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+#sortableTable {
+	th {
+		cursor:pointer;
+	}
+}
+
+.tableWrapper {
+  .row {
+    .col-xs-4, .col-xs-8 {
+      width:50%;
+    }
+    .col-xs-4 {
+      select#page-menu {
+        background: #3d8117;
+        margin-left: 5px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 3px;
+      }
+      input#search-field {
+      border: 1px solid #bfbca4;
+      padding: 3px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      }
+    }
+    .col-xs-8 {
+      ul.pagination.pull-right {
+        float:right;
+        li {
+          margin:5px;
+          background:#008000;
+          border-radius:5px;
+
+          &:hover {
+            background:#0aa91d;
+          }
+
+          &.active {
+            background: #fba530;
+          }
+
+          &.disabled {
+            pointer-events:none;
+            opacity:0.5;
+          }
+
+          a{
+            color:#fff;
+            text-decoration:none;
+            padding: 7px;
+            line-height: 2;
+            &[aria-label]:before {
+              content: attr(aria-label);
+            }
+          }
+        }
+      }
+    }
+  }
+  table {
+    .sort-icon {
+      border: solid #fba530;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      float:right;
+      margin-top:5px;
+
+      &.sort-descending {
+          transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        &:after {
+          content:'';
+        }
+      }
+      &.sort-ascending {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        &:after {
+          content:'';
+        }
+      }
+      &.sort-none {
+        display:none;
+        &:after {
+          content:'';
+        }
+      }
+    }
+  }
+}
