@@ -104,7 +104,7 @@ class Offers extends React.Component {
 		      <div className="brand greenLogo">
 				<div className="brand greenLogo">GREEN<span className="redLogo">KART</span></div>
 			  </div>
-			  <a className="cart-header-navlink blinkingText" href="https://qasummit.org/" target="_blank">Career Focussed QA Meetup with Rahul Shetty @Pune - Limited Seats! Book Now!</a>
+			  <a className="cart-header-navlink blinkingText" href="https://rahulshettyacademy.com/" target="_blank">Limited offer - FREE Core Java & QA Resume course</a>
 
 		    </div>
 		  </header>
