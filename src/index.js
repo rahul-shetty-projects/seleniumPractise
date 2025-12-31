@@ -58,8 +58,10 @@ class App extends Component {
   }
   // Fetch Initial Set of Products from external API
   getProducts() {
+    const currentOrigin = window.location.origin;
+    const currentPath = window.location.pathname;
     let url =
-      "https://rahulshettyacademy.com/seleniumPractise/data/products.json";
+      `${currentOrigin}${currentPath}data/products.json`;
     // let url = './assets/products.json';
     axios.get(url).then(response => {
       this.setState({
