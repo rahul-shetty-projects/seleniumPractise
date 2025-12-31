@@ -14,7 +14,7 @@ const cleanOptions = {
 module.exports = merge.smart(webpackCommon, {
   output: {
     filename: "main.[chunkhash].js",
-    path: path.resolve(__dirname, "../../"),
+    path: path.resolve(__dirname, "../dist"),
     publicPath: "./"
   },
   mode: "production",
