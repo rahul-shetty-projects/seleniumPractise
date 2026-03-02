@@ -159,7 +159,7 @@ class Header extends Component {
           </div>
 
           <div className="cart">
-          <a className="cart-header-navlink blinkingText" href="https://rahulshettyacademy.com/" target="_blank">Limited offer - FREE Core Java & QA Resume course</a>
+          <a className="cart-header-navlink blinkingText" href="https://techsmarthire.com/" target="_blank">Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire</a>
           <a class="cart-header-navlink" href="#/offers" target="_blank">Top Deals</a>
           <a class="cart-header-navlink" href="https://rahulshettyacademy.com/dropdownsPractise/" target="_blank">Flight Booking</a>
             <div className="cart-info">
