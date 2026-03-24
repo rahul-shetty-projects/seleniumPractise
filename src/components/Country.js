@@ -54,7 +54,7 @@ class Country extends React.Component {
          <header style={{ marginLeft: '-125px' }}>
 		    <div className="container">
 		      <div className="brand greenLogo">GREEN<span className="redLogo">KART</span></div>
-			  <a className="cart-header-navlink blinkingText" href="https://techsmarthire.com/" target="_blank">Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire</a>
+			  <a className="cart-header-navlink blinkingText" href="http://qasummit.org/" target="_blank">Join Rahul Shetty for a QA Career Meetup in CHENNAI — Book Your Spot</a>
 		    </div>
 		  </header>
 		  <div className="products-wrapper">
